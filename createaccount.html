@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
     <!--Project CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Login</title>
+    <title>Create account</title>
   </head>
   <body>
     <!-- Optional JavaScript -->
@@ -36,7 +36,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="text-center mt-5 mb-3">
-                        <h2>Login</h2>
+                        <h2>Get Started Today</h2>
                     </div>
                     <div id="social-account-connect" class="flex">
                         <div>
@@ -54,19 +54,26 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form action="login.php" method="post">
+                    <form action="register.php" method="post">
                         <div class="form-group">
                             <label for="username">Email adress</label>
                             <input type="text" class="form-control" id="email-input" name="email" placeholder="Email">
                         </div>
                         <div class="form-group">
+                            <label for="username">Phone</label>
+                            <input type="text" class="form-control" id="phone-input" name="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
                             <label for="password">Password</label>
                             <input type="password" class="form-control" id="password-input" name="password" placeholder="Password">
-                            <a class="text-primary text-decoration-none" href="resetpassword.html">Forgot Password ?</a>        
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password-input" name="confirm-password" placeholder="Confirm Password">
                         </div>
                         <div class="card-footer">
-                            <button style="width: 100%; font-size: 1.2em;" type="submit" class="btn btn-dark text-white">Login</button>
-                            <a class="text-dark text-decoration-none" href="createaccount.html">Don't have a account ? <span class="text-primary">Create Account</span></a>
+                            <button style="width: 100%; font-size: 1.2em;" type="submit" class="btn btn-dark text-white">Create account</button>
+                            <a class="text-dark text-decoration-none" href="login.html">Already you have an account ? <span class="text-primary">Login</span></a>
                         </div>  
                     </form>
                 </div>
